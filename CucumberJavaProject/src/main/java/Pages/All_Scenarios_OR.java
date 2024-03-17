@@ -11,13 +11,13 @@ import org.openqa.selenium.WebElement;
 
 import  DriverFactory.DriverFactory;
 
-public class Scenario1_OR {
+public class All_Scenarios_OR {
 
 private WebDriver driver;
 static String pp ,pp1,rp1,rp,cp1, cp;
 static String toalprice;
 
-public Scenario1_OR(WebDriver driver) {
+public All_Scenarios_OR(WebDriver driver) {
 	this.driver= driver;
 }
 

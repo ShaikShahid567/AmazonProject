@@ -3,14 +3,14 @@ package StepDefinitions;
 import org.openqa.selenium.WebDriver;
 
 import DriverFactory.DriverFactory;
-import Pages.Scenario1_OR;
+import Pages.All_Scenarios_OR;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import DriverFactory.ConfigReader;
-public class Scenario1_Steps {
+public class Scenario1_2_Steps {
 	
-private Scenario1_OR  m1= new  Scenario1_OR(DriverFactory.getDriver());
+private All_Scenarios_OR  m1= new  All_Scenarios_OR(DriverFactory.getDriver());
 
 	
 	@Given("Open Amazon.com")

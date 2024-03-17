@@ -8,7 +8,7 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features = {"src/test/resources/Features/Scenario1.feature"},
+		features = {"src/test/resources/Features/Scenarios.feature"},
 		glue = {"StepDefinitions", "Scenario3_Steps"},
 		tags= "@Scenario3"
 		)
