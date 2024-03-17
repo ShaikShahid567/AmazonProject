@@ -46,7 +46,7 @@ private Monitor_Laptop_Page  m1= new  Monitor_Laptop_Page(DriverFactory.getDrive
 	@Then("Add the item to cart by clicking on Add to Cart")
 	public void add_the_item_to_cart_by_clicking_on_add_to_cart() throws InterruptedException {
 	    m1.addCart();
-	    System.out.println("Cart Added");
+	    System.out.println("Item added to Cart successfully");
 	   
 	}
 
