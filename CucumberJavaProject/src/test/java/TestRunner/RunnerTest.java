@@ -9,8 +9,8 @@ import io.cucumber.junit.CucumberOptions;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 		features = {"src/test/resources/Features/Scenario1.feature"},
-		glue = {"StepDefinitions", "AppHooks"},
-				plugin = {"pretty"}	
+		glue = {"StepDefinitions", "Scenario3_Steps"},
+		tags= "@Scenario3"
 		)
 
 public class RunnerTest {

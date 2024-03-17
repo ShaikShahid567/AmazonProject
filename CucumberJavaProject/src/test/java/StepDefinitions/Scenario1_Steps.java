@@ -3,33 +3,34 @@ package StepDefinitions;
 import org.openqa.selenium.WebDriver;
 
 import DriverFactory.DriverFactory;
-import Pages.Monitor_Laptop_Page;
+import Pages.Scenario1_OR;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import DriverFactory.ConfigReader;
-public class Monitor_Laptop_Steps {
+public class Scenario1_Steps {
 	
-private Monitor_Laptop_Page  m1= new  Monitor_Laptop_Page(DriverFactory.getDriver());
+private Scenario1_OR  m1= new  Scenario1_OR(DriverFactory.getDriver());
 
 	
 	@Given("Open Amazon.com")
-	public void open_amazon_com() {
+	public void open_amazon_com() throws InterruptedException {
 	   
 		DriverFactory.getDriver().get("https://www.amazon.com");
-		DriverFactory.getDriver().navigate().refresh();
+		//DriverFactory.getDriver().navigate().refresh();
+		Thread.sleep(5000);
 	}
 
 	
 	@When("In the Search field type {string}")
-	public void in_the_search_field_type(String search) {
+	public void in_the_search_field_type(String search) throws InterruptedException {
 		m1.searchBox(search);
 		System.out.println("clicked on search");
 		
 	}
 
 	@Then("Press Enter")
-	public void press_Enter() {
+	public void press_Enter() throws InterruptedException {
 		m1.searchIcon();
 		System.out.println("enter clicked successfully");
 	   
@@ -60,13 +61,13 @@ private Monitor_Laptop_Page  m1= new  Monitor_Laptop_Page(DriverFactory.getDrive
 	@Then("Verify that the price is identical to the product page")
 	public void verify_that_the_price_is_identical_to_the_product_page() {
 		m1.cartPrice();
-		System.out.println("Product price is compated with cart price");
+		System.out.println("Product price is compared with cart price");
 	}
 
 	@Then("Verify that the sub total is identical to the product page")
 	public void verify_that_the_sub_total_is_identical_to_the_product_page() {
 		m1.subtotalPrice();
-		System.out.println("Product price is compated with subtotal price");
+		System.out.println("Product price is compared with subtotal price");
 	}
 
 
