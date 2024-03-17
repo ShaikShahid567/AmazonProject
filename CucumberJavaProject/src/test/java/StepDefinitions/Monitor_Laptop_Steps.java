@@ -31,7 +31,7 @@ private Monitor_Laptop_Page  m1= new  Monitor_Laptop_Page(DriverFactory.getDrive
 	@Then("Press Enter")
 	public void press_Enter() {
 		m1.searchIcon();
-		System.out.println("enter clicked");
+		System.out.println("enter clicked successfully");
 	   
 	}
 
